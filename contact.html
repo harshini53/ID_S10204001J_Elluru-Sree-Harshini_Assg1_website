@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<!--Rmb to edit stuff -->
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Elluru Sree Harshini">
+    <meta name="description" content="Contact">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+    <link rel='stylesheet' type='text/css' href="style.css">
+    <link rel='stylesheet' type='text/css' href="normalise.css">
+    <script src="java.js"></script>
+    <title>Contact Me</title>
+</head>
+
+<body>
+
+    <br><br><br>
+    <!--The side naviagtion bar (contents)-->
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="about_me.html">About Me</a>
+        <a href="education.html">Education</a>
+        <a href="project.html">My Projects</a>
+        <a href="skillsets_&_work_experience.html">Skillsets & <br>Work Experience</a>
+        <a href="contact.html">Contact Me</a>
+    </div>
+      
+    <button class="openbtn" onclick="openNav()">☰| Contact Me</button>  
+    <br><br><br>
+
+    
+    <div style = "text-align: left;"class="row sizecontact center">
+    <form class="form">
+        <h2>Keep in Touch</h2>
+        <!--Label and textfield for name-->
+        <p>
+            <label style="display: inline-block;font-weight:bold;width: 100px;" for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Full Name">
+        </p>
+
+
+        <!--label for Email-->
+        <p>
+            <label style="display: inline-block;font-weight: bold;width: 100px;" for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Email Address" >
+        </p>
+
+        <!--label for Phone-->
+        <p>
+            <label style="display: inline-block;font-weight: bold;width: 100px;" for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder="Phone Number">
+        </p>
+
+        <!--Comments about the travel website-->
+        <p>
+            <label style=" display:inline-block; font-weight: bold ; width: 100px ;" for="contact">
+                Message</label>
+            <textarea id="contact" name="contact"></textarea>
+        </p>
+
+        <!--Label for Submit and Clear form-->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear Form">
+    </form>
+
+    <div class="side">
+        lol
+    </div>
+    </div>
+
+    <br><br><br><br>
+    <!--Created a footer-->
+    <div class="footer">
+      <!--Positioned items to extreme right-->
+      <div class="positionright">
+          <div class="row">   
+              <a href="https://www.instagram.com/h._.arshini/" target="_blank">
+                  <img class = "icon" src ="images/instagram.jpg" alt="instagram">
+              </a>
+              <a href = "https://www.linkedin.com/in/elluru-sree-harshini-92b429211/" target="_blank">
+                  <img class = "icon" src="images/linkdin.png" alt="linkdin"> 
+              </a> 
+              <a href="https://github.com/harshini53" target="_blank">
+                  <img class = "icon" src="images/github.png" alt="github"> 
+              </a> 
+          </div>
+      </div>
+      <button class="button" onclick="myFunction()">Download My Resume</button>
+    </div>
+    
+</body>
+</html>

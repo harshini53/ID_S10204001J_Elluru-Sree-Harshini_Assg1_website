@@ -1,0 +1,139 @@
+<DOCTYPE html>
+<html>
+<!--Rmb to edit stuff -->
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Elluru Sree Harshini">
+  <meta name="description" content="Projects">
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  
+  <!--Links to external sheets-->
+  <link rel='stylesheet' type='text/css' href="style.css">
+  <link rel='stylesheet' type='text/css' href="normalise.css">
+  <script src="java.js"></script>
+
+  <title>My Projects</title>
+</head>
+
+<body>
+
+  <br><br><br>
+  <!--The side naviagtion bar (contents)-->
+  <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="about_me.html">About Me</a>
+      <a href="education.html">Education</a>
+      <a href="project.html">My Projects</a>
+      <a href="skillsets_&_work_experience.html">Skillsets & <br>Work Experience</a>
+      <a href="contact.html">Contact Me</a>
+  </div>
+    
+  <button class="openbtn" onclick="openNav()">☰| My Projects</button> 
+
+  
+  <br><br><br><br>
+
+  <div class="tab center">
+    <button class="tablinks" onclick="openCity(event, 'Done')" id="defaultOpen">Completed</button>
+    <button class="tablinks" onclick="openCity(event, 'Current')">Currently Doing</button>
+    <button class="tablinks" onclick="openCity(event, 'Upcoming')">Upcoming</button>
+  </div>
+
+    <div class="size1 center tabcontent" id="Done">
+      <br><br>
+      <div class="row">
+        <div class="slideshow-container center center" id="Done">
+
+          <div class="mySlides fade">
+            <img class= "img-project1" src="images/dp_asg1.png">
+          </div>
+
+          <div class="mySlides fade ">
+            <img class= "img-project1" src="images/dp_asg2.png">
+          </div>
+
+          <div class="mySlides fade">
+            <img class= "img-project1" src="images/dp_asg3.png">
+          </div>
+
+          <div class="center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+        </div> 
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div style = "text-align: left;"class="main padding"> 
+          <h2>Design principle Assignments</h2> 
+          <p>                            
+            Prior to this assignment, we have been taught basic elements and principles of design. For example, 
+            such as Typography, colour concepts, making use of negative space and more. I learnt how these 
+            factors can affect the visuals in a good and bad manner.Thus, we were tasked to create 
+            an app icon, create a splash screen for it and lastly advertise our design with posters.I had tried to apply
+            what I leant.
+            <br><br>The work is as shown.
+          </p>
+
+        </div>
+      </div>
+
+  <br><br><br>
+  <div class="center images center">
+    <div class="row">
+      <div style = "text-align: right;" class="main">
+        <h2>Innovation Made Possible Assignment</h2>
+          <p>
+            We have been taught how to use the Design Thinking framework to help heighten our 
+            problem solving, come up with innovations to tackle problems and explore new ideas. For our 
+            assignment, we were tasked to write a proposal for certain topics. Our group had chosen to do Mental 
+            Wellbeing (at work). So, my teammates Justin, Rose, Luke Qing Ling and I had decided that our solution 
+            for this project would be a mobile app called “Work Balance" which will help them better manage their time 
+            and cope with stress.
+            <br><br>
+            <a href = "https://marvelapp.com/prototype/ghajdgh/screen/80656874">Click here to view the prototype!</a>
+          </p>
+      </div>
+
+        <div class="side">
+          <img class = "img-project2" src="images/imp.png">
+        </div>
+        
+      </div> 
+    </div>
+  </div>
+
+  <div class="size2 center tabcontent" id="Current">
+    <p>Currently do not have</p>
+  </div>
+  
+  <div class="size2 center tabcontent" id="Upcoming">
+    <p>Currently do not have</p>
+  </div>
+
+
+  <br><br><br><br>
+  <!--Created a footer-->
+  <div class="footer">
+    <!--Positioned items to extreme right-->
+    <div class="positionright">
+        <div class="row">   
+            <a href="https://www.instagram.com/h._.arshini/" target="_blank">
+                <img class = "icon" src ="images/instagram.jpg" alt="instagram">
+            </a>
+            <a href = "https://www.linkedin.com/in/elluru-sree-harshini-92b429211/" target="_blank">
+                <img class = "icon" src="images/linkdin.png" alt="linkdin"> 
+            </a> 
+            <a href="https://github.com/harshini53" target="_blank">
+                <img class = "icon" src="images/github.png" alt="github"> 
+            </a> 
+        </div>
+    </div>
+    <button class="button" onclick="myFunction()">Download My Resume</button>
+  </div>
+  
+</body>
+</html>
+ 

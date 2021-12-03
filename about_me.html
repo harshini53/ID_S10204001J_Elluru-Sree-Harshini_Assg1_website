@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Elluru Sree Harshini">
+    <meta name="description" content="About me">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    
+    <!--Links to external sheets-->
+    <link rel='stylesheet' type='text/css' href="style.css">
+    <link rel='stylesheet' type='text/css' href="normalise.css">
+    <script src="java.js"></script>
+
+    <title>About Me</title>
+
+</head>
+
+<body>
+    
+    <br><br><br>
+    <!--The side naviagtion bar (contents)-->
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="about_me.html">About Me</a>
+        <a href="education.html">Education</a>
+        <a href="project.html">My Projects</a>
+        <a href="skillsets_&_work_experience.html">Skillsets & <br>Work Experience</a>
+        <a href="contact.html">Contact Me</a>
+    </div>
+    
+    <!--The button to open up navigation bar-->
+    <button class="openbtn" onclick="openNav()">☰| About Me</button> 
+      
+    <br><br>
+
+    <h1 class="center">About Me</h1>
+
+    <!--Created a container and centered it-->
+    <div class="size center">
+
+        <!--A sub side container which holds a picture-->
+        <div class="side" style="background-color: transparent;">
+            <img class= "img-abt-me"src="images/me.jpg" alt="A picture of me">
+        </div>
+
+        <!--A sub main container-->
+        <div class="main" style="background-color: transparent;">    
+            <h2>Introduction</h2>           
+            <p>
+                My name is Harshini. I am currently a 1st-year student at Ngee Ann pursuing a diploma in Information 
+                Technology. Ever since young I have been fascinated by technology and how it keeps evolving. It 
+                amazes me how these small devices (phones) has so many applications and uses such as for entertainment 
+                (play games and watching YouTube) or for research (School Projects). Due to that I have always been 
+                fascinated by it and decided to pursue web applications as I find it amazing to create apps and have them 
+                be used by many people. The curriculum in Ngee Ann is aligned with my goals of being a web developer and 
+                also be a well - rounded tech professional. Thus I came to Ngee Ann.
+            </p>
+        </div>
+    </div>
+    
+    <br><br><br>
+
+    <div class="size1 center">
+        <h1 class="center">Hobbies</h1>
+    
+        <div class="row">
+            <!--A sub side container which holds the video-->
+            <div class="side">
+                <video width='300' height='350' controls loop>
+                    <source src='images/drawing.mp4' target='_blank' type='video/mp4'>
+                    Your browser does not support the video
+                </video>
+            </div>
+
+            <!--A sub main container-->
+            <div class="main padding">
+                <h2>Drawing</h2>
+                <p>
+                    Ever since young, drawing has been a fun thing for me to do and acts as a stress-reliver when 
+                    work becomes unbearable. It just started with small random doodles until I started to take it 
+                    more seriously by practicing and eventually became a bit better. I mainly shade and draw as its 
+                    easier compared to painting and coloring. I am trying to improve my skills by trying new things 
+                    like portraits as I can currently only can draw characters, animals and not portraits.
+                </p>
+            </div>
+        </div>
+
+        <br><br><br>
+        
+        <!--Created a container-->
+        <div class="row">
+            <!--A sub main container-->
+            <div class="main padding">
+                <h2>Badminton</h2>
+                <p>
+                    I like to play badminton during my free time as it’s easy to play and can play anywhere. It helps 
+                    me to have fun and also help keep a more active lifestyle as I mostly live a sedentary life other 
+                    than travelling to school. I mostly play together with my sister of friends.  
+                </p>
+            </div>
+
+            <!--A sub side container which holds a picture-->
+            <div class="side">
+                <img src="images/badminton.png" width="300" height="300" >
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    
+    <!--Created a footer-->
+    <div class="footer">
+        <!--Positioned items to extreme right-->
+        <div class="positionright">
+            <div class="row">   
+                <a href="https://www.instagram.com/h._.arshini/" target="_blank">
+                    <img class = "icon" src ="images/instagram.jpg" alt="instagram">
+                </a>
+                <a href = "https://www.linkedin.com/in/elluru-sree-harshini-92b429211/" target="_blank">
+                    <img class = "icon" src="images/linkdin.png" alt="linkdin"> 
+                </a> 
+                <a href="https://github.com/harshini53" target="_blank">
+                    <img class = "icon" src="images/github.png" alt="github"> 
+                </a> 
+            </div>
+        </div>
+        <br>
+        © Copyright 2021
+    </div>
+</body>
+</html>
