@@ -53,12 +53,12 @@
         <p>Bukit Batok Secondary School</p>
 
             <!--Created a container-->
-            <div class="w3-container">
-                <button onclick="document.getElementById('id01').style.display='block'" class="w3-button" >Achievements</button>
-                <div id="id01" class="w3-modal">
-                    <div class="w3-modal-content">
-                        <div class="w3-container">
-                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <div class="popup-container">
+                <button onclick="document.getElementById('id01').style.display='block'" class="popup-button" >Achievements</button>
+                <div id="id01" class="popup">
+                    <div class="popup-content">
+                        <div class="popup-container">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="popup-button popup-topright">&times;</span>
                             <h1>Achievement in Secondary School</h1>
                                 <h2>2016</h2>
                                 <p>
@@ -106,21 +106,22 @@
     <br><br><br><br>
     <!--Created a footer-->
     <div class="footer">
-        <!--Positioned items to extreme right-->
-        <div class="positionright">
-            <div class="row">   
-                <a href="https://www.instagram.com/h._.arshini/" target="_blank">
-                    <img class = "icon" src ="images/instagram.jpg" alt="instagram">
-                </a>
-                <a href = "https://www.linkedin.com/in/elluru-sree-harshini-92b429211/" target="_blank">
-                    <img class = "icon" src="images/linkdin.png" alt="linkdin"> 
-                </a> 
-                <a href="https://github.com/harshini53" target="_blank">
-                    <img class = "icon" src="images/github.png" alt="github"> 
-                </a> 
-            </div>
-        </div>
-        <br>
-        © Copyright 2021
+      <!--Positioned items to extreme right-->
+      <div class="positionright">
+          <div class="row">   
+              <a href="https://www.instagram.com/h._.arshini/" target="_blank">
+                  <img class = "icon" src ="images/instagram.jpg" alt="instagram">
+              </a>
+              <a href = "https://www.linkedin.com/in/elluru-sree-harshini-92b429211/" target="_blank">
+                  <img class = "icon" src="images/linkdin.png" alt="linkdin"> 
+              </a> 
+              <a href="https://github.com/harshini53" target="_blank">
+                  <img class = "icon" src="images/github.png" alt="github"> 
+              </a> 
+          </div>
+      </div>
+      <button class="button" onclick="myFunction()">Download My Resume</button>
     </div>
+
 </body>
+</html>
