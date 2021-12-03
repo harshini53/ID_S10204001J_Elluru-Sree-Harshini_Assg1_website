@@ -5,33 +5,11 @@
   font-weight: bold;
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 415px) {
-  .prev, .next,.text {
-    font-size: 11px,}
-  .prev,.next{width: 0px;top:73%;}
-  .footer{width: 100%;}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 414px) {
-  .timeline::after {margin-left: 62px;}
-  .right::after{left:-243px}
-  .container{left: 158px;}
-  h1{text-align: center;}
-
-
-  /* Full-width containers */
-  .container {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
-  }  
-}
-
 
 /* To make sure no underline */
 ul{list-style: none;} 
 
+/* Aligning elelments at the center */
 .center{
   display: block;
   margin-left: auto;
@@ -73,11 +51,9 @@ h1{
   font-family: 'Lucida console','monospace';
   font-weight: bolder;
 }
-
 p{
   font-size: large;
 }
-
 /*------------------------------------------------------------*/
 /*Styling the homepage (text)*/
 .homepage{
@@ -128,22 +104,19 @@ p{
   padding: 20px;
 }
 
-
-.size3{
-  width: 900px;
-  background-color: whitesmoke;
-  height: 1500px;
-  padding: 20px;
-}
-
 .sizecontact
 {
   width: 900px; 
   height: 460px;
   background-color: whitesmoke;
   padding: 20px;
-  animation: fading 4s;
-  animation-duration: 4s;
+  animation: fading 8s;
+}
+.size3{
+  width: 900px;
+  background-color: whitesmoke;
+  height: 1500px;
+  padding: 20px;
 }
 
 /*------------------------------------------------------------*/
@@ -165,7 +138,6 @@ p{
 
 /*------------------------------------------------------------*/
 /* Styling of navigation bar  */
-
 /*Create sidepanel of navigation box*/
 .sidepanel  {
   width: 0;
@@ -211,7 +183,7 @@ p{
   color: white;
   padding: 10px 10px;
   border: none;
-  width: auto;  
+  width: 100%;  
   text-align: left;
   height: 50px;
 }
@@ -345,8 +317,15 @@ animation:animatetop 0.2s
   to {opacity: 1}
 }
 
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
 /*------------------------------------------------------------*/
 /*Creating flexboxes for Skillset*/
+
 /*Created container*/
 .flex-container {
   display: flex;
@@ -369,6 +348,7 @@ animation:animatetop 0.2s
   color: white;
 }
 
+/*------------------------------------------------------------*/
 /* Creating Timeline for work experience */
 .timeline {
   position: relative;
@@ -376,7 +356,7 @@ animation:animatetop 0.2s
   margin: 0 auto;
 }
 
-/* The actual timeline (the vertical ruler) */
+/* vertical line*/
 .timeline::after {
   content: '';
   position: absolute;
@@ -384,19 +364,19 @@ animation:animatetop 0.2s
   background-color: white;
   top: 0;
   bottom: 0;
-  margin-left: 231px; /* supposed to be -3*/
+  margin-left: 231px; 
 }
 
 /* Container around content */
 .container {
   padding: 10px 40px;
   position: relative;
-  left:296px; /* self-create */
+  left: 296px;
   background-color: inherit;
   width: 50%;
 }
 
-/* The circles on the timeline */
+/* Styling circles on the timeline */
 .container::after {
   content: '';
   position: absolute;
@@ -410,33 +390,14 @@ animation:animatetop 0.2s
   z-index: 1;
 }
 
-/* Place the container to the left */
-.left {
-  left:0;
-}
-
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
+/* Positioning cirlce*/
 .right::after {
   left: -95px; 
 }
 
-/* The actual content */
+/* The actual content of timeline */
 .content {
-  padding: 10px;
+  padding: 13px;
   background-color: white;
   position: relative;
   border-radius: 6px;
@@ -444,8 +405,6 @@ animation:animatetop 0.2s
   height: 280px;
 }
 
-/*------------------------------------------------------------*/
-/* Styling the form*/
 .form {
   width: 55%;
   padding: 12px;
@@ -465,9 +424,8 @@ animation:animatetop 0.2s
 
 
 /*------------------------------------------------------------*/
-/*Creating a popup in Education*/
-/*Outeside content layout*/
-.popup{
+
+.popup-modal{
   z-index:3;
   display:none;
   padding-top:100px;
@@ -480,44 +438,49 @@ animation:animatetop 0.2s
   background-color:rgb(0,0,0);
   background-color:rgba(0,0,0,0.4)
 }
+
+
 .popup-container{
   padding:0.01em 16px;
 
 }
 
-/*Styling popup buttons*/
 .popup-button{
   -webkit-touch-callout:none;
   -webkit-user-select:none;-khtml-user-select:none;
   -moz-user-select:none;
   -ms-user-select:none;
-  user-select:none;
-  
+  user-select:none; 
 }
 
-/*Creating a popup in Education*/
 .popup-content{
   margin:auto;
-  background-color:#fff;
+  background-color:rgb(214, 214, 214);
   position:relative;
   padding:0;
   outline:0;
-  width:600px;
+  width:600px
 }
-
-/*Positiong button on top right*/
 .popup-topright{
   position:absolute;
   right:0;
-  top:0;
+  top:0
 }
+.popup-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
 
-/* Skillset when hover text appears styling */
+
+
+/* */
 .appear {
   transition: all 400ms ease;
 }
 
-
+.text {
+  color: white;
+  display: none;
+  padding: 0px;
+  margin-top: 0%;
+}
 
 .appear:hover p.text {
   display: inline-block;
@@ -529,7 +492,16 @@ animation:animatetop 0.2s
   display: none;
 }
 
+/* On smaller screens, decrease text size */
+.rotate-right,.rotate-left {
+  transition: all 400ms ease;
+  background: yellow;
+  
+}
 
+.rotate-left {
+  transition: all 400ms ease;
+}
 
 
 .text {
@@ -539,8 +511,19 @@ animation:animatetop 0.2s
   font-size: 15px;
 }
 
+.rotate-right:hover p.text,
+.rotate-left:hover p.text {
+  display: inline-block;
+}
+
+
+.rotate-right:hover p:not([class="text"]),
+.rotate-left:hover p:not([class="text"]) {
+  display: none;
+}
+
 /*------------------------------------------------------------*/
-/* Style the tab inside My projects */
+/* Style the tab */
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
@@ -565,7 +548,7 @@ animation:animatetop 0.2s
   background-color: #ddd;
 }
 
-/* Create an active tab */
+/* Create an active/current tablink class */
 .tab button.active {
   background-color: #ccc;
 }
@@ -594,5 +577,40 @@ animation:animatetop 0.2s
   background-color: #444;
 }
 
+@media(max-width: 380px) {
+  .row{display: block;}
+  .size,.size1,.size2,.size3,.sizecontact,.tab{width: 375px;}
+  .side,.slideshow-container{padding: 6%;}
+  .size{height: 900px;}
+  .size1{height: 2000px;}
+  .sizecontact{height: 550px;}
+  .timeline::after{left: -188px;}
+  .container {padding:6px 0px;}
+  .prev,.next{
+    margin-left: -6px;
+    margin-right: -6px;
+    width:0%;
+    top:68%;
+  }
+  .content {
+    padding: 13px;
+    position: relative;
+    width: 356px;
+    height: 361px;
+  }
+  
+  .container::after {
+    width: 22px;
+    height: 22px;
+    right: -43px;
+    border: 4px;
+    
+  }
+  .right::after {left: -276px;}
+  .dot {margin: 4px 1px;}
+  .openbtn,.footer,.form{width: 102%;}
+
+/****************/
 
 }
+

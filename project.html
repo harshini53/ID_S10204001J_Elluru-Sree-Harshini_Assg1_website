@@ -1,6 +1,6 @@
 <DOCTYPE html>
 <html>
-<!--Rmb to edit stuff -->
+
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Elluru Sree Harshini">
@@ -28,19 +28,23 @@
       <a href="contact.html">Contact Me</a>
   </div>
     
+  <!--The button to open up navigation bar-->
   <button class="openbtn" onclick="openNav()">☰| My Projects</button> 
 
-  
   <br><br><br><br>
-
+  
+  <!--Created tab function and centred it-->
   <div class="tab center">
     <button class="tablinks" onclick="openCity(event, 'Done')" id="defaultOpen">Completed</button>
     <button class="tablinks" onclick="openCity(event, 'Current')">Currently Doing</button>
     <button class="tablinks" onclick="openCity(event, 'Upcoming')">Upcoming</button>
   </div>
 
+    <!--Created container and put inside tab-->
     <div class="size1 center tabcontent" id="Done">
       <br><br>
+
+      <!--Created a slideshow-->
       <div class="row">
         <div class="slideshow-container center center" id="Done">
 
@@ -66,6 +70,7 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+        <!--Created container and put inside tab-->
         <div style = "text-align: left;"class="main padding"> 
           <h2>Design principle Assignments</h2> 
           <p>                            
@@ -81,6 +86,8 @@
       </div>
 
   <br><br><br>
+
+  <!--Created container and put inside tab-->
   <div class="center images center">
     <div class="row">
       <div style = "text-align: right;" class="main">
@@ -105,10 +112,12 @@
     </div>
   </div>
 
+  <!--Created container and put inside tab-->
   <div class="size2 center tabcontent" id="Current">
     <p>Currently do not have</p>
   </div>
-  
+
+  <!--Created container and put inside tab-->
   <div class="size2 center tabcontent" id="Upcoming">
     <p>Currently do not have</p>
   </div>
@@ -131,6 +140,7 @@
             </a> 
         </div>
     </div>
+    <!--Download function-->
     <button class="button" onclick="myFunction()">Download My Resume</button>
   </div>
   

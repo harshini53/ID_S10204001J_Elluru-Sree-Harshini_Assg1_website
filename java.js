@@ -1,4 +1,6 @@
-//Javascript for Slideshow 
+
+/////////////////////////////////////
+// Javascript for my slideshow
 var slideIndex = 1;
 showSlides,(slideIndex);
 
@@ -26,8 +28,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
-//Javascript for Navbar
+//Javascript for closing and opening Navigation bar
 function openNav() {
   document.getElementById("mySidepanel").style.width = "250px";
 }
@@ -36,11 +37,11 @@ function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
 
-//JavaScript for pop up screen
+//Javascript for popuop in Education
 var modal = document.getElementById("myModal");
 var button = document.getElementById("myButton");
 var span = document.getElementsByClassName("close")[0];
-
+ 
 button.onclick = function() {
   modal.style.display = "block";
 }
@@ -49,7 +50,13 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
-//JavaScript for tab in project
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+//Javascript for Project tab
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -63,14 +70,10 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+document.getElementById("defaultOpen").click();
 
-//Alert box
+//Alert box for Dowload button
 function myFunction() {
   alert("You have successfully downloaded!");
-}
-
-//Submit button
-function myFunction() {
-  alert("You have successfully submitted!");
 }
 
