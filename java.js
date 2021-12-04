@@ -72,6 +72,6 @@ function myFunction() {
 }
 
 //Alert box for Submit button in Contact page
-function myFunction() {
+function myFunction1() {
   alert("You have successfully submitted!");
 }

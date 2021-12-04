@@ -312,7 +312,6 @@ animation:animatetop 0.1s ease
 
 /*------------------------------------------------------------*/
 /*Creating flexboxes for Skillset*/
-
 /*Created container*/
 .flex-container {
   display: flex;
@@ -326,10 +325,10 @@ animation:animatetop 0.1s ease
 .flex-container > li {
   background-color: rgb(255, 166, 166);
   width: 250px;
-  height: 250px;
+  height: 290px;
   margin: 9px;
   padding: 7px;
-  padding-top: 80px;
+  padding-top: 25px;
   font-size: 25px;
   text-align: center;
   color: white;
