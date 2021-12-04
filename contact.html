@@ -31,33 +31,34 @@
     <button class="openbtn" onclick="openNav()">☰| Contact Me</button>  
     <br><br><br>
 
-    <h1 class="center">Keep in Touch</h1>
     <div style = "text-align: left;"class="row sizecontact center">
-    <form class="form main">
+    <form class="form">
+
+        <h2>Keep in Touch</h2>
         <!--Label and textfield for name-->
         <p>
             <label style="display: inline-block;font-weight:bold;width: 100px;" for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Full Name">
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
         </p>
 
 
         <!--label for Email-->
         <p>
             <label style="display: inline-block;font-weight: bold;width: 100px;" for="email">Email:</label>
-            <input type="text" id="email" name="email" placeholder="Email Address" >
+            <input type="email" id="email" name="email" placeholder="Email Address" required >
         </p>
 
         <!--label for Phone-->
         <p>
             <label style="display: inline-block;font-weight: bold;width: 100px;" for="phone">Phone:</label>
-            <input type="text" id="phone" name="phone" placeholder="Phone Number">
+            <input type="number" id="phone" name="phone" placeholder="Phone Number" required max="8" pattern="[0-9]+">
         </p>
 
         <!--Messages-->
         <p>
             <label style=" display:inline-block; font-weight: bold ; width: 100px ;" for="contact">
                 Message</label>
-            <textarea id="contact" name="contact"></textarea>
+            <textarea type = "text" id="contact" name="contact" placeholder = "Type your message here...."rows="9" cols="32" required></textarea>
         </p>
 
         <!--Label for Submit and Clear form-->

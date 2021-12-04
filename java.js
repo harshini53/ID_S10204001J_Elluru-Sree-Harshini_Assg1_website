@@ -50,12 +50,6 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
 //Javascript for Project tab
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
@@ -77,3 +71,7 @@ function myFunction() {
   alert("You have successfully downloaded!");
 }
 
+//Alert box for Submit button in Contact page
+function myFunction() {
+  alert("You have successfully submitted!");
+}
